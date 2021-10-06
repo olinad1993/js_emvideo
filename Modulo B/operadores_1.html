@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <h1>Operadores PT1</h1>
+    <script>
+        // Ordem de precedencia dos operadores 
+
+        // 1 () --> Primeiro lugar
+        // 2 ** --> AS potencias 
+        // 3 * / % --> mult, div e resto div( esquerda para direita)
+        // 4 + -->  Somas e subtrações
+
+        // += | -= | *= | /= | **= | %= | --> ... 
+        // Caso a variavel receba ela mesmo ex: n = n + 4 fica n+= 4
+        // n++ adiciona mais um ou menos 1 dependendo do caso.
+
+
+        var a = 5 + 3;
+        var b = a % 5;
+        var c = 5 * b ** 2;
+        var d = 10 - a / 2
+        var e = 6 * 2 / d;
+        var f = b % e + 4 / e;
+
+        console.log(a,b,c,d,e,f)
+
+    </script>
+    
+</body>
+</html>

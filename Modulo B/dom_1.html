@@ -17,7 +17,7 @@
     <h1>Introdução ao DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo ao usar o <strong>DOM</strong> em javascript</p>
-    <div id="msg">Clique em mim</div>
+    <div class="msg">Clique em mim</div>
 
     <script> // Anotações usando document.write:
         
@@ -30,8 +30,9 @@
         // ID --> getElementById ()
         // por nome --> getElementsByname ()
         // por classe --> getElementsByClassName 
-        // por seletor --> 
+        // por seletor -->  getSelector() // querySelectorAll()
     </script>
+
         <script> // Exemplos Marca:
         
         // Nesse exemplo ele irá pegar o primeiro paragrafo
@@ -42,11 +43,20 @@
         //p1.style.color = 'blue' // mudar cor do nome.
         //corpo.style.background = 'grey' // mudando a cor do corpo.
         </script>
-        <script>//Exemplo por ID
-        var d = window.document.getElementById('msg')
-        d.style.background = 'green'
 
+        <script>//Exemplo por ID
+        // var d = window.document.getElementById('msg')
+        // d.style.background = 'green'
+    
+    
         </script>
+
+    <script> // Por Seletor metodo mais recente
+
+    var d = window.document.querySelector('div.msg')   // Class é . | Id é # | 
+    d.style.color = 'blue'
+
+    </script>
         
          
 

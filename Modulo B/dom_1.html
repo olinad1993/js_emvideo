@@ -1,17 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dom</title>
+    <title>Introdução ao DOM</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
 </head>
 <body>
     <h1>Introdução ao DOM</h1>
-    <script>
-        
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo ao usar o <strong>DOM</strong> em javascript</p>
+    <div id="msg">Clique em mim</div>
 
+    <script> // Anotações usando document.write:
         
+        // window.document.write('Olá mundo <br>') // Maneira simples de criar os componentes
+        // window.document.write(window.document.charset , '<br>') // Set de caracteres
+        // window.document.write(window.navigator.appName , '<br>') // Saber nome do navegador
+        // window.document.write(window.document.URL , '<br>') // Saber qual minha URL
+
+        // Marca --> getElementsByTagName()
+        // ID --> getElementById ()
+        // por nome --> getElementsByname ()
+        // por classe --> getElementsByClassName 
+        // por seletor --> 
     </script>
+        <script> // Exemplos Marca:
+        
+        // Nesse exemplo ele irá pegar o primeiro paragrafo
+        // contagem começa em 0 = 1 , 1 = 2 , 2 = 3 , 3 = 4;
+        //var corpo = window.document.body // mudar cor do corpo
+        //var p1 = window.document.getElementsByTagName('p')[0]
+        //window.document.write('Está escrito assim: ' + p1.innerText) // texto do primeiro paragrafo.
+        //p1.style.color = 'blue' // mudar cor do nome.
+        //corpo.style.background = 'grey' // mudando a cor do corpo.
+        </script>
+        <script>//Exemplo por ID
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+
+        </script>
+        
+         
+
     </body>
 </html>

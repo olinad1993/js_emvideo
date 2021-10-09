@@ -21,17 +21,21 @@
 </head>
 <body>
     <!-- https://developer.mozilla.org/pt-BR/docs/Web/Events -->
-    <button id='area' onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
-        CLIQUE AQUI
-    </button>
-
-    <script>
+    <!-- <button id='area' onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> Forma 1--> 
+        <button id='area'>Clique Aqui</button>
+        
+        <script>
         var a = window.document.getElementById('area')
+        // Forma 2 - Html fica mais limpo
+        a.addEventListener('click' , clicar) 
+        a.addEventListener('mouseenter' , entrar)
+        a.addEventListener('mouseout' , sair)
 
         function clicar () {
             
             a.innerText = 'clicou!'
-            window.alert("Bem-Vindo")
+            // window.alert("Bem-Vindo")
+            a.style.background = 'red' // implementando cores ao fazer uma ação
 
         }
         function entrar() {
@@ -40,6 +44,7 @@
         }
         function sair() {
             a.innerText = 'Saiu!'
+            a.style.background = 'green'
 
         }
 

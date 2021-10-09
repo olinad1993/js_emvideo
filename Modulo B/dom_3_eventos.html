@@ -5,18 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos 3 - Somando numeros</title>
+
     <style>
-        
+        body{
+            font: normal 18pt Arial;
+            background: black;
+            color: white;
+            text-align:center ;
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#result{
+            margin-top: 20px;
+        }
+        #btn{
+            color: white;
+            background-color: green;
+        }
 
     </style>
 </head>
 <body>
     <h1>Somando valores</h1>
     
-    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="somar" onclick="somar()">
-    <div id="result">Resultado: </div>
+    <input id="btn" type="button" value="somar" onclick="somar()">
+    <div id="result"></div>
 
     <script>
         function somar() {
@@ -26,10 +43,11 @@
             var n1 = Number(tn1.value) 
             var n2 = Number(tn2.value)
             var s = n1 + n2
-            result.innerHTML = `A Soma entre ${n1} e ${n2} é igual a ${s}` 
-
+            var m = (n1+n2) /2
+            result.innerHTML = `A Soma entre ${n1} e ${n2} é igual a <strong>${s}</strong> e a média é ${m}`
+            
         }
-
+      
     </script>
 </body>
 </html>

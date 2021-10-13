@@ -5,11 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETRAN</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p1/2234309-movendo-fundo-do-carro-velocimetro-e-velocimetro-vetor.jpg");
+
+        }
+
+    </style>
 </head>
 <body>
     <h1>Sistema de Multas</h1>
     Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
-    <input type="button" value="verificar" onclick="calcular()">
+    <input id="btn_verificar" type="button" value="verificar" onclick="calcular()">
     <div id="result"></div>
     
     <script>

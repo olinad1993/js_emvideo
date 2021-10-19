@@ -3,9 +3,9 @@ function carregar() {
     var img = window.document.getElementById("imagem");
     var data = new Date ();
 
-    var hora = data.getHours ();
-    var minutos = data.getMinutes ();
-    var segundos = data.getSeconds ();
+    hora = data.getHours ();
+    minutos = data.getMinutes ();
+    segundos = data.getSeconds ();
     document.getElementById('msg')
     innerHTML=hora +":" + minutos +":" + segundos;
     setTimeout('carregar ()', 500);

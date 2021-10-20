@@ -10,24 +10,31 @@
 <body>
     <header>
         <h1>Verificador de Idade</h1>
-
     </header>
-
     <section>
-        <div id="result">
-            Ano de Nascimento: <input type="number"><br>
-            Sexo: <input type="radio" name="Masculino" id="mas">
-            <input type="radio" name="Feminino" id="fem">
-            
-
-        </div>
-
         <div>
+            <p>Ano de Nascimento: 
+                <input type="number" name="txtano" id="txtano" min="0"><br> 
+            </p>
+            
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas" min="0" checked>
+                <label for="mas">Masculino</label>
+
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+
+            </p>
 
         </div>
-
+        <div id="result">
+            Preencha os dados acima para ver o resultado!
+        </div>
     </section>
-
     <footer>
         <p>&copy; Danilo Ferreira</p>
     </footer>

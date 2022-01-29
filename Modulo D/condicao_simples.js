@@ -1,9 +1,9 @@
-- condição Simples - 
+// condição Simples 
 
 if(condicao){
 true
 
-- condição Composta - 
+// condição Composta - 
 }else{ // condição composta
 false
 }

@@ -8,13 +8,13 @@ function verificar() {
       txtidade.focus();
       return;
     }
-    
+
     result.innerHTML = `<p>Você tem <strong>${idade} anos.</strong> </p>` 
   
  
     if (idade < 16) {
       result.innerHTML += `<strong>Você ainda não vota!</strong>`
-  } else if (idade < 18 || idade > 65) {
+  } else if (idade < 18 || idade > 70) {
       result.innerHTML += `Seu voto é <strong>Opcional!</strong>`
   } else {
       result.innerHTML += `Seu voto é <strong> Obrigatório!</strong>`

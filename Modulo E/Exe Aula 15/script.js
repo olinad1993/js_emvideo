@@ -1,35 +1,36 @@
 function contar(){
-    let ini = document.getElementById('txtinicio').valueAsNumber;
-    let fim = document.getElementById('txtfim').valueAsNumber;
-    let passo = document.getElementById('txtpasso').valueAsNumber;
+    let ini = document.getElementById('txtinicio')
+    let fim = document.getElementById('txtfim')
+    let passo = document.getElementById('txtpasso')
     let result = document.getElementById('result')
 
-    // Validação caso esteja algo em branco
-    if(ini.value == 0 || fim.value == 0 || passo.value == 0){
-        alert('Preencha todos os dados')
-    } 
-    
-    else { 
+      // Validação caso esteja algo em branco
+      if(ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
+        window.alert('Preencha todos os dados !')
+     } else { 
         result.innerHTML = 'Contando: '
 
-        if(passo <= 0){
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+
+        if(p <= 0){
             alert('Passo invalido')
-            passo = 1
-        }
-    }      
-        
-        if (ini < fim) {
+            p = 1
+        }      
+        if (i < f) {
             // Contagem crescente
-            for(let c = ini; c <= fim; c += passo) {
+            for(let c = i; c <= f; c += p) {
                 // adicionando emojis ( unicode emoji list (google))
                 result.innerHTML += ` ${c} \u{1F449} `
             }
             
         } else {
             // Contagem regressiva
-            for(let c = ini; c >= fim; c -= passo) {
+            for(let c = i; c >= f; c -= p) {
                 result.innerHTML += ` ${c} \u{1F449} `
             }           
         }
         result.innerHTML += `\u{2705}`
+    }
 }
